@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>build.gradle.kts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+build.gradle.kts</font>
+</center></td></tr></table>
+<pre><span class="s0">plugins </span><span class="s1">{</span>
+    <span class="s0">id</span><span class="s1">(</span><span class="s2">&quot;java&quot;</span><span class="s1">)</span>
+<span class="s1">}</span>
+
+<span class="s0">group </span><span class="s1">= </span><span class="s2">&quot;org.example&quot;</span>
+<span class="s0">version </span><span class="s1">= </span><span class="s2">&quot;1.0-SNAPSHOT&quot;</span>
+
+<span class="s0">repositories </span><span class="s1">{</span>
+    <span class="s0">mavenCentral</span><span class="s1">()</span>
+    <span class="s0">maven</span><span class="s1">(</span><span class="s2">&quot;https://maven.seedfinding.com&quot;</span><span class="s1">)</span>
+<span class="s1">}</span>
+
+<span class="s0">dependencies </span><span class="s1">{</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_math:1.171.0&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_seed:1.171.1&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_core:1.210.0&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_noise:1.171.1&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_biome:1.171.1&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_terrain:1.171.1&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_reversal:1.171.1&quot;</span><span class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;com.seedfinding:mc_feature:1.171.10&quot;</span><span class="s1">)</span>
+
+    <span class="s0">testImplementation</span><span class="s1">(</span><span class="s0">platform</span><span class="s1">(</span><span class="s2">&quot;org.junit:junit-bom:6.0.0&quot;</span><span class="s1">))</span>
+    <span class="s0">testImplementation</span><span class="s1">(</span><span class="s2">&quot;org.junit.jupiter:junit-jupiter&quot;</span><span class="s1">)</span>
+    <span class="s0">testRuntimeOnly</span><span class="s1">(</span><span class="s2">&quot;org.junit.platform:junit-platform-launcher&quot;</span><span class="s1">)</span>
+<span class="s1">}</span>
+
+<span class="s0">tasks</span><span class="s1">.</span><span class="s0">test </span><span class="s1">{</span>
+    <span class="s0">useJUnitPlatform</span><span class="s1">()</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
